@@ -70,10 +70,10 @@ msgid ""
 "<code>DEBUG_TOOLBAR_CONFIG</code> dictionary's key "
 "<code>INTERCEPT_REDIRECTS</code> to <code>False</code>."
 msgstr "Django Debug Toolbar в отладочных целях перехватила редирект на адрес, "
-"указанный ниже. Вы можете нажать на ссылку, чтобы продолжить обычное "
+"указанный выше. Вы можете нажать на ссылку, чтобы продолжить обычное "
 "выполнение. Если хотите отключить это поведение, установите ключ "
-"<code>INTERCEPT_REDIRECTS</code> в dict'е <code>DEBUG_TOOLBAR_CONFIG</code> "
-"= <code>False</code>."
+"<code>INTERCEPT_REDIRECTS</code> в словаре <code>DEBUG_TOOLBAR_CONFIG</code> "
+"равным <code>False</code>."
 
 #: templates/debug_toolbar/panels/cache.html:14
 msgid "Total Calls"
