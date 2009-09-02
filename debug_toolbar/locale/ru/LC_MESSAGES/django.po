@@ -71,8 +71,8 @@ msgid ""
 "<code>INTERCEPT_REDIRECTS</code> to <code>False</code>."
 msgstr "Django Debug Toolbar в отладочных целях перехватила редирект на адрес, "
 "указанный выше. Вы можете нажать на ссылку, чтобы продолжить обычное "
-"выполнение. Если хотите отключить это поведение, установите ключ "
-"<code>INTERCEPT_REDIRECTS</code> в словаре <code>DEBUG_TOOLBAR_CONFIG</code> "
+"выполнение. Если хотите отключить это поведение, установите"
+"в словаре <code>DEBUG_TOOLBAR_CONFIG</code> ключ <code>INTERCEPT_REDIRECTS</code>"
 "равным <code>False</code>."
 
 #: templates/debug_toolbar/panels/cache.html:14
