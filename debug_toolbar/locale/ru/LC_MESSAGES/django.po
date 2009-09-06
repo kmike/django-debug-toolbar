@@ -56,7 +56,7 @@ msgstr "Версия Django"
 
 #: templates/debug_toolbar/base.html:24
 msgid "Hide"
-msgstr "Спрятать"
+msgstr "Скрыть"
 
 #: templates/debug_toolbar/base.html:55
 msgid "Close"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: templates/debug_toolbar/panels/headers.html:5
 msgid "Key"
-msgstr "Ключ"
+msgstr "Заголовок"
 
 #: templates/debug_toolbar/panels/headers.html:6
 #: templates/debug_toolbar/panels/request_vars.html:12
