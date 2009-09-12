@@ -20,15 +20,45 @@ socketserver_path = os.path.realpath(os.path.dirname(SocketServer.__file__))
 # get a copy of the toolbar object with access to its config dictionary
 SQL_WARNING_THRESHOLD = getattr(settings, 'DEBUG_TOOLBAR_CONFIG', {}).get('SQL_WARNING_THRESHOLD', 500)
 
+# Note: This isn't intended to catch ALL possible SQL keywords, just a good common set.
+# Note: Subsets are listed last to avoid matching a subset of a keyword.  This
+# whole thing could be greatly improved but for now this works.
 SQL_KEYWORDS = (
-    'SELECT',
+    'ALTER',
+    'AND',
+    'ASC',
+    'AS',
+    'AVG',
+    'COUNT',
+    'CREATE',
+    'DESC',
+    'DELETE',
+    'DISTINCT',
+    'DROP',
     'FROM',
-    'WHERE',
-    'INNER JOIN',
-    'LEFT OUTER JOIN',
-    'ORDER BY',
-    'HAVING',
     'GROUP BY',
+    'HAVING',
+    'INNER JOIN',
+    'INSERT',
+    'IN',
+    'LEFT OUTER JOIN',
+    'LIKE',
+    'LIMIT',
+    'MAX',
+    'MIN',
+    'OFFSET',
+    'ON',
+    'ORDER BY',
+    'OR',
+    'SELECT',
+    'SET',
+    'STDDEV_POP',
+    'STDDEV_SAMP',
+    'SUM',
+    'UPDATE',
+    'VAR_POP',
+    'VAR_SAMP',
+    'WHERE',
 )
 
 def tidy_stacktrace(strace):
@@ -91,13 +121,15 @@ class SQLDebugPanel(DebugPanel):
     def __init__(self):
         self._offset = len(connection.queries)
         self._sql_time = 0
+        self._queries = []
 
     def nav_title(self):
         return 'SQL'
 
     def nav_subtitle(self):
-        self._sql_time = sum([q['duration'] for q in connection.queries[self._offset:]])
-        num_queries = len(connection.queries) - self._offset
+        self._queries = connection.queries[self._offset:]
+        self._sql_time = sum([q['duration'] for q in self._queries])
+        num_queries = len(self._queries)
         return "%d %s in %.2fms" % (
             num_queries,
             (num_queries == 1) and 'query' or 'queries',
@@ -111,9 +143,8 @@ class SQLDebugPanel(DebugPanel):
         return ''
 
     def content(self):
-        sql_queries = connection.queries[self._offset:]
         width_ratio_tally = 0
-        for query in sql_queries:
+        for query in self._queries:
             query['sql'] = reformat_sql(query['sql'])
             try:
                 query['width_ratio'] = (query['duration'] / self._sql_time) * 100
@@ -123,7 +154,7 @@ class SQLDebugPanel(DebugPanel):
             width_ratio_tally += query['width_ratio']
 
         context = {
-            'queries': sql_queries,
+            'queries': self._queries,
             'sql_time': self._sql_time,
             'is_mysql': settings.DATABASE_ENGINE == 'mysql',
         }

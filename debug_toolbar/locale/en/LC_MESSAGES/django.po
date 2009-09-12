@@ -1,9 +1,7 @@
-# Django Debug Toolbar en Español.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Percy Pérez-Pinedo <percyp3@gmail.com>, 2009.
+# Percy Pérez-Pinedo, 2009.
 #
-# Caracteres especiales: á, é, í, ó, ú, ñ,
 #
 msgid ""
 msgstr ""
@@ -19,19 +17,19 @@ msgstr ""
 
 #: panels/logger.py:56
 msgid "Logging"
-msgstr "Registros"
+msgstr ""
 
 #: panels/settings_vars.py:16
 msgid "Settings"
-msgstr "Configuraciones"
+msgstr ""
 
 #: panels/signals.py:39
 msgid "Signals"
-msgstr "Señales"
+msgstr ""
 
 #: panels/template.py:46
 msgid "Templates"
-msgstr "Plantillas"
+msgstr ""
 
 #: panels/timer.py:35 templates/debug_toolbar/panels/cache.html:39
 #: templates/debug_toolbar/panels/logger.html:7
@@ -40,19 +38,19 @@ msgstr "Plantillas"
 #: templates/debug_toolbar/panels/sql_profile.html:12
 #: templates/debug_toolbar/panels/sql_select.html:11
 msgid "Time"
-msgstr "Tiempo"
+msgstr ""
 
 #: panels/version.py:12
 msgid "Django Version"
-msgstr "Versión Django"
+msgstr ""
 
 #: templates/debug_toolbar/base.html:24
 msgid "Hide"
-msgstr "Ocultar"
+msgstr ""
 
 #: templates/debug_toolbar/base.html:55
 msgid "Close"
-msgstr "Cerrar"
+msgstr ""
 
 #: templates/debug_toolbar/redirect.html:9
 msgid ""
@@ -65,15 +63,15 @@ msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:14
 msgid "Total Calls"
-msgstr "Total Llamadas"
+msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:16
 msgid "Total Time"
-msgstr "Tiempo Total"
+msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:18
 msgid "Hits"
-msgstr "Visitas"
+msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:20
 msgid "Misses"
@@ -85,19 +83,19 @@ msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:40
 msgid "Type"
-msgstr "Tipo"
+msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:41
 msgid "Parameters"
-msgstr "Parámetros"
+msgstr ""
 
 #: templates/debug_toolbar/panels/cache.html:42
 msgid "Function"
-msgstr "Función"
+msgstr ""
 
 #: templates/debug_toolbar/panels/headers.html:5
 msgid "Key"
-msgstr "Llave"
+msgstr ""
 
 #: templates/debug_toolbar/panels/headers.html:6
 #: templates/debug_toolbar/panels/request_vars.html:12
@@ -107,15 +105,15 @@ msgstr "Llave"
 #: templates/debug_toolbar/panels/settings_vars.html:6
 #: templates/debug_toolbar/panels/timer.html:10
 msgid "Value"
-msgstr "Valor"
+msgstr ""
 
 #: templates/debug_toolbar/panels/logger.html:6
 msgid "Level"
-msgstr "Nivel"
+msgstr ""
 
 #: templates/debug_toolbar/panels/logger.html:8
 msgid "Message"
-msgstr "Mensaje"
+msgstr ""
 
 #: templates/debug_toolbar/panels/logger.html:9
 msgid "Location"
@@ -123,63 +121,61 @@ msgstr ""
 
 #: templates/debug_toolbar/panels/logger.html:24
 msgid "No messages logged"
-msgstr "No hay mensajes registrados"
+msgstr ""
 
 #: templates/debug_toolbar/panels/request_vars.html:11
 #: templates/debug_toolbar/panels/request_vars.html:37
 #: templates/debug_toolbar/panels/request_vars.html:59
 #: templates/debug_toolbar/panels/request_vars.html:81
-#, fuzzy
 msgid "Variable"
-msgstr "Variable"
+msgstr ""
 
 #: templates/debug_toolbar/panels/request_vars.html:25
-#, fuzzy
 msgid "No COOKIE data"
-msgstr "No GET datos"
+msgstr ""
 
 #: templates/debug_toolbar/panels/request_vars.html:51
 msgid "No SESSION data"
-msgstr "No SESSION datos"
+msgstr ""
 
 #: templates/debug_toolbar/panels/request_vars.html:73
 msgid "No GET data"
-msgstr "No GET datos"
+msgstr ""
 
 #: templates/debug_toolbar/panels/request_vars.html:95
 msgid "No POST data"
-msgstr "No POST datos"
+msgstr ""
 
 #: templates/debug_toolbar/panels/settings_vars.html:5
 msgid "Setting"
-msgstr "Configuración"
+msgstr ""
 
 #: templates/debug_toolbar/panels/signals.html:5
 msgid "Signal"
-msgstr "Señal"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql.html:6
 msgid "Action"
-msgstr "Acción"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql.html:30
 msgid "Line"
-msgstr "Línea"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql.html:31
 msgid "Method"
-msgstr "Método"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql.html:32
 msgid "File"
-msgstr "Archivo"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql_explain.html:3
 #: templates/debug_toolbar/panels/sql_profile.html:3
 #: templates/debug_toolbar/panels/sql_select.html:3
 #: templates/debug_toolbar/panels/template_source.html:3
 msgid "Back"
-msgstr "Regresar"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql_explain.html:4
 msgid "SQL Explained"
@@ -189,7 +185,7 @@ msgstr ""
 #: templates/debug_toolbar/panels/sql_profile.html:10
 #: templates/debug_toolbar/panels/sql_select.html:9
 msgid "Executed SQL"
-msgstr "SQL Ejecutado"
+msgstr ""
 
 #: templates/debug_toolbar/panels/sql_profile.html:4
 msgid "SQL Profiled"
@@ -205,15 +201,12 @@ msgstr ""
 
 #: templates/debug_toolbar/panels/sql_select.html:34
 msgid "Empty set"
-msgstr "Set Vacío"
+msgstr ""
 
 #: templates/debug_toolbar/panels/templates.html:13
 msgid "Template"
-msgstr "Plantilla"
+msgstr ""
 
 #: templates/debug_toolbar/panels/timer.html:9
 msgid "Resource"
-msgstr "Recurso"
-
-#~ msgid "None"
-#~ msgstr "Ninguno"
+msgstr ""
