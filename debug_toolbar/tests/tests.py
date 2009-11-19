@@ -1,6 +1,4 @@
 from django.test import TestCase, Client
-from debug_toolbar.panels.request_vars import RequestVarsDebugPanel
-
 
 class RequestVarsPanelTest(TestCase):
 
