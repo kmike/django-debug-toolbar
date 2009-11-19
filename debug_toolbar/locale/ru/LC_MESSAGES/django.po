@@ -19,13 +19,14 @@ msgstr ""
 #: panels/cache.py:92
 #, python-format
 msgid "Cache: %.2fms"
-msgstr ""
+msgstr "Кэш: %.2fms"
 
 #: panels/cache.py:95
 msgid "Cache Usage"
-msgstr ""
+msgstr "Использование кэша"
 
-#: panels/headers.py:36 panels/headers.py:39
+#: panels/headers.py:36
+#: panels/headers.py:39
 msgid "HTTP Headers"
 msgstr "Заголовки HTTP"
 
@@ -38,7 +39,8 @@ msgstr "Журналирование"
 msgid "Log Messages"
 msgstr "Сообщение"
 
-#: panels/request_vars.py:13 panels/request_vars.py:16
+#: panels/request_vars.py:13
+#: panels/request_vars.py:16
 msgid "Request Vars"
 msgstr "Запрос"
 
@@ -51,7 +53,8 @@ msgstr "Настройки"
 msgid "Settings from <code>%s</code>"
 msgstr ""
 
-#: panels/signals.py:39 panels/signals.py:42
+#: panels/signals.py:39
+#: panels/signals.py:42
 msgid "Signals"
 msgstr "Сигналы"
 
@@ -61,7 +64,7 @@ msgstr ""
 
 #: panels/sql.py:160
 msgid "SQL Queries"
-msgstr ""
+msgstr "SQL запросы"
 
 #: panels/template.py:47
 msgid "Templates"
@@ -70,9 +73,10 @@ msgstr "Шаблоны"
 #: panels/template.py:52
 #, python-format
 msgid "Templates (%(num_templates)s rendered)"
-msgstr ""
+msgstr "Шаблоны (%(num_templates)s обработано)"
 
-#: panels/timer.py:35 templates/debug_toolbar/panels/cache.html:39
+#: panels/timer.py:35
+#: templates/debug_toolbar/panels/cache.html:39
 #: templates/debug_toolbar/panels/logger.html:7
 #: templates/debug_toolbar/panels/sql.html:5
 #: templates/debug_toolbar/panels/sql_explain.html:11
@@ -82,9 +86,8 @@ msgid "Time"
 msgstr "Время"
 
 #: panels/timer.py:47
-#, fuzzy
 msgid "Resource Usage"
-msgstr "Ресурс"
+msgstr "Использование ресурсов"
 
 #: panels/timer.py:78
 msgid "User CPU time"
@@ -107,14 +110,14 @@ msgstr ""
 msgid "Context switches"
 msgstr ""
 
-#: panels/version.py:20 panels/version.py:29
-#, fuzzy
+#: panels/version.py:20
+#: panels/version.py:29
 msgid "Versions"
-msgstr "Версия Django"
+msgstr "Версии"
 
 #: templates/debug_toolbar/base.html:23
 msgid "Hide Toolbar"
-msgstr ""
+msgstr "Скрыть панель"
 
 #: templates/debug_toolbar/base.html:23
 msgid "Hide"
@@ -122,7 +125,7 @@ msgstr "Скрыть"
 
 #: templates/debug_toolbar/base.html:48
 msgid "Show Toolbar"
-msgstr ""
+msgstr "Показать панель"
 
 #: templates/debug_toolbar/base.html:54
 msgid "Close"
@@ -140,8 +143,7 @@ msgid ""
 "redirect as normal.  If you'd like to disable this feature, set the "
 "<code>DEBUG_TOOLBAR_CONFIG</code> dictionary's key "
 "<code>INTERCEPT_REDIRECTS</code> to <code>False</code>."
-msgstr ""
-"Django Debug Toolbar в отладочных целях перехватила редирект на адрес, "
+msgstr "Django Debug Toolbar в отладочных целях перехватила редирект на адрес, "
 "указанный выше. Вы можете нажать на ссылку, чтобы продолжить обычное "
 "выполнение. Если хотите отключить это поведение, установите в словаре "
 "<code>DEBUG_TOOLBAR_CONFIG</code> ключ <code>INTERCEPT_REDIRECTS</code> "
@@ -319,7 +321,7 @@ msgstr ""
 #: templates/debug_toolbar/panels/sql_profile.html:10
 #: templates/debug_toolbar/panels/sql_select.html:9
 msgid "Executed SQL"
-msgstr "Запрос"
+msgstr "Выполненный запрос"
 
 #: templates/debug_toolbar/panels/sql_profile.html:4
 msgid "SQL Profiled"
@@ -348,13 +350,14 @@ msgid "Template path"
 msgstr "Шаблоны"
 
 #: templates/debug_toolbar/panels/templates.html:13
+#, fuzzy
 msgid "Template"
 msgstr ""
 
 #: templates/debug_toolbar/panels/templates.html:21
 #: templates/debug_toolbar/panels/templates.html:37
 msgid "Toggle Context"
-msgstr ""
+msgstr "Показать/скрыть контекст"
 
 #: templates/debug_toolbar/panels/templates.html:28
 #: templates/debug_toolbar/panels/templates.html:43
@@ -371,9 +374,9 @@ msgstr "Ресурс"
 
 #: templates/debug_toolbar/panels/versions.html:6
 msgid "Package"
-msgstr ""
+msgstr "Пакет"
 
 #: templates/debug_toolbar/panels/versions.html:7
-#, fuzzy
 msgid "Version"
-msgstr "Версия Django"
+msgstr "Версия"
+
